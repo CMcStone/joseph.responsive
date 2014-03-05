@@ -1,0 +1,7 @@
+include MANIFEST.in
+include README.rst
+include *.png
+include *.zip
+recursive-include joseph *
+recursive-include docs *
+global-exclude *pyc

@@ -1,0 +1,138 @@
+Metadata-Version: 1.0
+Name: joseph.responsive
+Version: 0.3
+Summary: A responsive design for Plone/Diazo powered sites
+Home-page: http://www.simplesconsultoria.com.br/
+Author: Simples Consultoria
+Author-email: products@simplesconsultoria.com.br
+License: GPL
+Description: ===============================================
+        Responsive Diazo
+        ===============================================
+        
+        .. contents:: Table of Contents
+           :depth: 2
+        
+        Overview
+        --------
+        
+        Responsive Diazo is an installable Plone Theme developed by `Simples
+        Consultoria <http://www.simplesconsultoria.com.br/>`_ using the **theming** and
+        **packaging** features available in `plone.app.theming`_.
+        
+        You could use this theme as a start for you own Diazo themes -- but send us a
+        postcard, ok ;-)
+        
+        Requirements
+        ------------
+        
+            * Plone 4.1.x (http://plone.org/products/plone)
+            
+            * plone.app.theming (*will be installed as a dependency of this package*)
+        
+        Screenshots
+        ------------
+        
+        Layout of the site when viewed in a computer resolution:
+        
+        .. image:: https://github.com/simplesconsultoria/joseph.responsive/raw/master/joseph.responsive-full.png
+        
+        Layout of the site when viewed with a tablet resolution:
+        
+        .. image:: https://github.com/simplesconsultoria/joseph.responsive/raw/master/joseph.responsive-reduced.png
+        
+        Installation
+        ------------
+        
+        Getting the theme
+        ~~~~~~~~~~~~~~~~~~~~
+        
+        Zip file
+        ++++++++++
+        
+        If you are an end user, you might enjoy installation via zip file import.
+        
+            1. Download a `zip file <https://github.com/simplesconsultoria/joseph.responsive/raw/master/joseph.responsive.zip>`_ 
+                
+            2. Import the theme from the Diazo theme control panel.
+        
+        Buildout
+        ++++++++++
+        
+        If you are a developer, you might enjoy installing it via buildout.
+        
+        Add ``joseph.responsive`` to your ``plone.recipe.zope2instance`` section's *eggs* parameter e.g.::
+        
+            [instance]
+            eggs =
+                Plone
+                ...
+                joseph.responsive
+        
+        Or, you can add it as a dependency on your own product *setup.py*::
+        
+            install_requires=[
+                ...
+                'joseph.responsive',
+            ],
+        
+        
+        Enabling the theme
+        ~~~~~~~~~~~~~~~~~~~~
+        
+            Select and enable the theme from the Diazo control panel. That's it!
+        
+        
+        Credits
+        -------
+        
+            * Thiago Tamosauskas (thiago at simplesconsultoria dot com dot br) - CSS, 
+              Accessibility and Q&A.
+              
+            * Andre Nogueira (andre at simplesconsultoria dot com dot br) - Conception 
+              and prototype.
+            
+            * Davi Lima (davi at simplesconsultoria dot com dot br) - Translation,
+              Fixes.
+        
+        .. _`plone.app.theming`: http://pypi.python.org/pypi/plone.app.theming
+        .. _`Plone 4.1`: http://pypi.python.org/pypi/Plone/4.1rc2
+        
+        
+        Changelog
+        ------------
+        
+        0.3 (2012-03-21)
+        ~~~~~~~~~~~~~~~~
+        
+            * Explicitly add stuff to Manifest.in , solving issue #1 [ericof]
+            * Add include MANIFEST.in to MANIFEST.in [ericof]
+        
+        
+        0.2 (2012-02-23)
+        ~~~~~~~~~~~~~~~~
+        
+            * Including customizable touch-favicon  [tamosauskas]
+            * Pixel-Perfect adjustment in navbar [tamosauskas]
+            * Add ARIA landmark roles [agnogueira]
+        	* Add a so much better Ipad navigation experience [tamosauskas]
+            * Mobile search using overlay [tamosauskas]
+        
+        0.1 (2011-11-04)
+        ~~~~~~~~~~~~~~~~
+            
+            * Packaging [erico_andrei]
+            * Applies Liquid Layout  [tamosauskas]
+            * Proportional use of images and fonts [tamosauskas]
+            * Media queries for responsive design [tamosauskas]
+            * Transparent Bacground in the header image [tamosauskas]
+            * Search Box layout without images [tamosauskas]
+        
+        
+Keywords: web zope plone theme responsive mobile simples_consultoria
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: Framework :: Zope3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

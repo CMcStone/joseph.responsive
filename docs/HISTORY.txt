@@ -1,0 +1,29 @@
+Changelog
+------------
+
+0.3 (2012-03-21)
+~~~~~~~~~~~~~~~~
+
+    * Explicitly add stuff to Manifest.in , solving issue #1 [ericof]
+    * Add include MANIFEST.in to MANIFEST.in [ericof]
+
+
+0.2 (2012-02-23)
+~~~~~~~~~~~~~~~~
+
+    * Including customizable touch-favicon  [tamosauskas]
+    * Pixel-Perfect adjustment in navbar [tamosauskas]
+    * Add ARIA landmark roles [agnogueira]
+	* Add a so much better Ipad navigation experience [tamosauskas]
+    * Mobile search using overlay [tamosauskas]
+
+0.1 (2011-11-04)
+~~~~~~~~~~~~~~~~
+    
+    * Packaging [erico_andrei]
+    * Applies Liquid Layout  [tamosauskas]
+    * Proportional use of images and fonts [tamosauskas]
+    * Media queries for responsive design [tamosauskas]
+    * Transparent Bacground in the header image [tamosauskas]
+    * Search Box layout without images [tamosauskas]
+

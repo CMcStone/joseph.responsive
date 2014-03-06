@@ -5,7 +5,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <theme href="index.html" css:if-content="#visual-portal-wrapper" /> 
-    <notheme if="$ajax_load" />
+    <!-- notheme if="$ajax_load" /-->
     <!--Head-->
     <copy css:content="html" css:theme="html" attributes="lang dir" />
     <before css:content="head meta" css:theme="head meta" />

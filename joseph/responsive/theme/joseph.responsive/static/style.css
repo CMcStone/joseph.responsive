@@ -85,7 +85,12 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
     background: #CCCCCC;
     color: White;
 }
-
+#portal-breadcrumbs {
+	color:#000000;
+}
+#portal-breadcrumbs a {
+	color:#C00016;
+}
 /* navigation */
 /* #nav {padding: 1em 2em 1em 0;	font-size: 1.2em;}
 #nav ul {padding-top: 0; background:#C00006; color: #ffffff; border-bottom:1 px solid #FF9900;}

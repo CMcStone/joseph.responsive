@@ -114,7 +114,11 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 	color:#fff;
 	max-width:100px;
 	vertical-align: bottom;
-	height: 30px;
+	height: 60px;
+	white-space: normal;
+	/* TODO: Once we have removed the whitespace from the nav template, this can be put back; */
+	/* border-bottom: 0.1em solid white; */
+	border-right: 0.1em solid white;
 }
 
 #portal-globalnav .selected a,
@@ -153,8 +157,6 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 /* Site Actions */
 #portal-siteactions {font-size: 100%; text-align: left; display:inline;}
 
-/* dropdown menus*/
-
 @media screen {
 
 /* DropDown Menu Styles */
@@ -168,121 +170,116 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
   position:relative;
   z-index:2;
   }
-  /*---------- BASIC STYLE one level ----------*/
-  #portal-globalnav {
-      list-style-image:none;
-    
-      }
-  * html #portal-globalnav {
-    position:relative;
-    zoom:1;
-    }
-  #portal-globalnav:after {
-    content:"";
-    clear:both;
-    display:block;
-    visibility:hidden;
-    }
-  #portal-globalnav li {
-    display:block;
-    float:left;
-    position:relative;
-    background :#C00016;
-    max-width: 100px;
-    }
-  #portal-globalnav li a {
-    display:block;
-    line-height: 1.5em;
-    padding:1px 1em 21px;
-    }
-  /* #portal-globalnav li a:link {
-  	background-color:#C00016;
-  	color:#fff; */
+
+/*---------- BASIC STYLE one level ----------*/
+#portal-globalnav {
+  list-style-image:none;
   }
-  /*#portal-globalnav li.selected a, #portal-globalnav a:hover{
-       background:#FF9900; */
-  
-    }
-  #portal-globalnav li a span {
-    cursor:pointer; /* fix ie */
-    display:block; /* fix ie */
-    white-space: normal;
-    }
-    /*----- DropDown -----*/
-    #portal-globalnav li ul {
-      display:none;
-      left:0;
-      position:absolute;
-      top:100%;
-      z-index:1000;
-      }
-    #portal-globalnav li:hover > ul {
-      display:block;
-      }
-    #portal-globalnav ul li {
-      float:none;
-      margin:0;
-      }
-    #portal-globalnav ul li a {
-      background-color:#C00016;
-      border-top:1px solid #fff;
-      height:auto;
-      padding:0.5em 1.5em 0.5em 1em;
-      vertical-align:top;
-      width:12em;
-      }
-    #portal-globalnav li.selected ul li a {
-      background-color:#C00016;
-      color:#fff;
-      }
-    #portal-globalnav li ul ul {
-      top:0;
-      left:100%;
-      }
-    #portal-globalnav ul li a.hasChildrens {
-      background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
-      background-position:100% 50%;
-      background-repeat:no-repeat;
-      background-color:#C00016;
-      }
-    #portal-globalnav ul li a.hasChildrens:hover {
-      background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
-      background-position:100% 50%;
-      background-repeat:no-repeat;
-      background-color:#C00016;
-      }
-    #portal-globalnav:hover li:hover > a {
-      background-color:#C00016;
-      color:#fff;
-      }
-    #portal-globalnav:hover li:hover ul > a {
-      background-color:#C00016;
-      color:#fff;
-      }
-    #portal-globalnav-mobile {
-      display:none;
-      }
-    }
+* html #portal-globalnav {
+  position:relative;
+  zoom:1;
+  }
+#portal-globalnav:after {
+  content:"";
+  clear:both;
+  display:block;
+  visibility:hidden;
+  }
+#portal-globalnav li {
+  display:block;
+  float:left;
+  position:relative;
+  }
+#portal-globalnav li a {
+  display:block;
+  line-height:2em;
+  padding:1px 1em 21px;
+  }
+#portal-globalnav li.selected a {
+  background-color:#C00016;
+  color:#fff;
+  }
+#portal-globalnav li a span {
+  cursor:pointer; /* fix ie */
+  display:block; /* fix ie */
+  white-space: normal;
+  }
 
-    @media (max-width:767px) {
-    #portal-globalnav.mobileMenuOn {
-      display:none;
-      }
-    .mobileMenu {
-      background-color: #C00016;
-      margin: 0 0 0.5em;
-      padding:0.5em;
-      }
-    #portal-globalnav-mobile {
-      display:block;
-      min-width:150px;
-      }
-    }
+/*----- DropDown -----*/
+#portal-globalnav li ul {
+  display:none;
+  left:0;
+  position:absolute;
+  top:100%;
+  z-index:1000;
+  }
+#portal-globalnav li:hover > ul {
+  display:block;
+  }
+#portal-globalnav ul li {
+  float:none;
+  margin:0;
+  }
+#portal-globalnav ul li a {
+  background-color:#C00016;
+  border-top:1px solid #fff;
+  height:auto;
+  padding:0.5em 1.5em 0.5em 1em;
+  vertical-align:top;
+  width:12em;
+  }
+#portal-globalnav li.selected ul li a {
+  background-color:#C00016;
+  color:#fff;
+  }
+#portal-globalnav li ul ul {
+  top:0;
+  left:100%;
+  }
+#portal-globalnav ul li a.hasChildrens {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#C00016;
+  }
+#portal-globalnav ul li a.hasChildrens:hover {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#C00016;
+  }
+#portal-globalnav:hover li:hover > a {
+  background-color:#C00016;
+  color:#fff;
+  }
+#portal-globalnav:hover li:hover ul > a {
+  background-color:#C00016;
+  color:#fff;
+  }
+#portal-globalnav-mobile {
+  display:none;
+  }
+}
 
-    @media print {
-    .mobileMenu {
-      display: none;
-      }
+@media (max-width:767px) {
+#portal-globalnav.mobileMenuOn {
+  display:none;
+  }
+.mobileMenu {
+  background-color: #C00016;
+  margin: 0 0 0.5em;
+  padding:0.5em;
+  }
+#portal-globalnav-mobile {
+  display:block;
+  min-width:150px;
+  }
+}
+
+@media print {
+.mobileMenu {
+  display: none;
+  }
 
 /* Responsive Design Magic*/
 

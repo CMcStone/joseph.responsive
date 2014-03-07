@@ -72,7 +72,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
     color: White;
     z-index: 5;
     border-bottom: 0.5em solid #75ad0a;
-}
+} 
 
 /*header*/
 #header {background-size:100% auto;	position:relative;}
@@ -112,7 +112,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #portal-globalnav li a {
   	background:#C00016;
 	color:#fff;
-	max-width:100px;
+	max-width:80px;
 	vertical-align: bottom;
 	height: 60px;
 	white-space: normal;
@@ -202,6 +202,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #portal-globalnav li a span {
   cursor:pointer; /* fix ie */
   display:block; /* fix ie */
+  line-height: 1.5em;
   white-space: normal;
   }
 

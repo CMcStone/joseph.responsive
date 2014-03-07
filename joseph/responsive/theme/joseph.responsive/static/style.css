@@ -15,12 +15,16 @@ body {background: #f5f5f5;}
 body {color: #f5f5f5; font-family: Helvetica, Arial, sans-serif; font-size: 62.5%;}
 a:link, a:visited, #content a:link, #content a:visited, dl.portlet a:link, dl.portlet a:visited, dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover, dd a:link {color:#000000; border-bottom: 0.1em solid #c00016;}
 li a:link {color:#000000; border-bottom: 0.1em solid #C00016;}
+
 #content a:hover,
 dl.portlet a:hover {
     color: #C00016 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 dl.portlet dt {
 	background:#C00016;
+}
+dl.portlet.portletNavigationTree {
+	color:#000;
 }
 h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif; }
 h1 {color: #C00016; font-size: 1em;}

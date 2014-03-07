@@ -19,6 +19,9 @@ li a:link {color:#000000; border-bottom: 0.1em solid #C00016;}
 dl.portlet a:hover {
     color: #C00016 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
+dl.portlet dt {
+	background:#C00016;
+}
 h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif; }
 h1 {color: #C00016; font-size: 1em;}
 h2, h3, h4, h5, h6 {color: #000000; font-size: 1em;}
@@ -42,10 +45,15 @@ border-width: 1px;
 border-style: solid;
 border-color: #c8c8c9;
 }
-#footer {background: #205C90; color: #fff;;}
+#footer {background: #205C90; color: #fff; font-size:110%;}
 #footer a:link {color:#fff;;}
 #footer a:hover {color:#fff;;}
 #footer a:visited {color:#fff;;}
+
+#portal-footer > p {
+font-size: 130%;
+text-align:center;
+}
 
 
 /****************** Basic Stuff ***********************/
@@ -155,8 +163,15 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #footer {clear: left; padding: 2em;}
 
 /* Site Actions */
-#portal-siteactions {font-size: 100%; text-align: left; display:inline;}
+#portal-siteactions {font-size: 100%; text-align: center; display:inline;}
 
+#portal-siteactions a, #portal-siteactions a:visited {
+	color:#000000;
+	border-bottom: none;
+}
+#portal-siteactions a:hover {
+	color:#C00016;
+}
 @media screen {
 
 /* DropDown Menu Styles */

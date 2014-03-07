@@ -32,7 +32,11 @@ h2, h3, h4, h5, h6 {color: #000000; font-size: 1em;}
 #nav a {color: #ffffff;}
 #nav a:hover, #nav li.selected a {padding-top: 1em;background: #ff9900;}
 
-
+#content h1.documentFirstHeading {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 130%;
+}
 #portal-searchbox #searchGadget {
 border-width: 1px;
 border-style: solid;
@@ -163,7 +167,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #footer {clear: left; padding: 2em;}
 
 /* Site Actions */
-#portal-siteactions {font-size: 100%; margin-left: auto; margin-right:auto; display: inline;}
+#portal-siteactions {font-size: 100%; margin-left: auto; margin-right:auto;}
 
 #portal-siteactions a:link, #portal-siteactions a:visited {
 	color:#000000;

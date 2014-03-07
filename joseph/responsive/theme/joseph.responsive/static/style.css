@@ -20,11 +20,11 @@ li a:link {color:#000000; border-bottom: 0.1em solid #C00016;}
 dl.portlet a:hover {
     color: #C00016 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
+dl.portlet a:link, dl.portlet a:visited{
+    color: #000 !important;
+}
 dl.portlet dt {
 	background:#C00016;
-}
-dl.portlet.portletNavigationTree {
-	color:#000;
 }
 h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif; }
 h1 {color: #C00016; font-size: 1em;}

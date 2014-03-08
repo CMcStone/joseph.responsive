@@ -11,6 +11,9 @@ Simples Consultoria - www.simplesconsultoria.com.br
 body {background: #f5f5f5;}
 #header {background: #f5f5f5;}
 
+/*IE 8 fix */
+td.sjosephead {width: 160px;}
+
 /* Colors and fonts */
 body {color: #f5f5f5; font-family: Helvetica, Arial, sans-serif; font-size: 62.5%;}
 a:link, a:visited, #content a:link, #content a:visited, dl.portlet a:link, dl.portlet a:visited, dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover, dd a:link {color:#000000; border-bottom: 0.1em solid #c00016;}
@@ -63,6 +66,13 @@ font-size: 140%;
 text-align:center;
 }
 
+/* IE fixes */
+p.copyright a{
+color:#fff;
+background-color:transparent;
+border-bottom:none;
+}
+
 
 /****************** Basic Stuff ***********************/
 #content .documentDescription, #content #description{
@@ -94,7 +104,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #header {background-size:100% auto;	position:relative;}
 #logo {margin-left:auto; margin-right:auto; max-width:90%;}
 #logo img {max-width:100%;}
-#logo a {display:block; width:100%; border-bottom:none;}
+#logo a {display:block; width:100%; border-bottom:none; background-color:transparent;}
 #portal-personaltools {font-size: 1.1em;}
 #portal-personaltools a:link, #portal-personaltools a:visited {
 	color:#fff;
@@ -109,6 +119,7 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 }
 #portal-breadcrumbs a {
 	color:#C00016;
+        background-color:transparent;
 }
 /* navigation */
 /* #nav {padding: 1em 2em 1em 0;	font-size: 1.2em;}

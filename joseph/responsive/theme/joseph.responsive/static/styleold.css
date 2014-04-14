@@ -128,7 +128,42 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #nav a {	padding: 1.1em 2em 1em 2em; text-decoration: none; border-bottom:none;} */
 #searchbt, #nav #seletor {display:none;}
 
+#portal-globalnav {
+  list-style-image:none;
+  clear: both;
+ font-size: 100%;
+  background: #C00016;
+      /* ensure top navigation dont touches portlets, content etc.. #10491 */
+  margin: 1em 0 1em 0;
+  }
+#portal-globalnav li a {
+  	background:#C00016;
+	color:#fff;
+	max-width:80px;
+	vertical-align: bottom;
+	height: 60px;
+	white-space: normal;
+	/* TODO: Once we have removed the whitespace from the nav template, this can be put back; */
+	/* border-bottom: 0.1em solid white; */
+	border-right: 0.1em solid white;
+}
 
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+    background: #C00016;
+    color: #fff;
+}
+/*#portal-globalnav .selected a:hover {
+    color: #FF9900; 
+} */
+#portal-globalnav a:link, a:visited {
+	font-size: 120%;
+	text-align: center;
+	font-weight: 400;
+	border-bottom: none;
+	color: #FFF;
+	background: #C00016;
+}
 
 /* Searchbox */
 #portal-searchbox {float: left; margin: -1% 1% 0 0; width:24%; font-size: 1em;}
@@ -156,17 +191,6 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 #portal-siteactions a:hover {
 	color:#C00016;
 }
-/*basic globalnav - dropdown needs this */
-#portal-globalnav {
-    clear: both;
-    font-size: 120%;
-    background: #C00016;
-    /* ensure top navigation dont touches portlets, content etc.. #10491 */
-    margin: 0 0 1em 0;
-}
-#portal-globalnav li {
-}
-
 @media screen {
 
 /* DropDown Menu Styles */
@@ -184,7 +208,6 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 /*---------- BASIC STYLE one level ----------*/
 #portal-globalnav {
   list-style-image:none;
-  width: 100%;
   }
 * html #portal-globalnav {
   position:relative;
@@ -202,33 +225,19 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
   position:relative;
   }
 #portal-globalnav li a {
-    display: inline-block;
-    padding: .5em 1em 1.8em 1em;
-    background: #C00016;
-    min-width: 6em;
-    white-space: normal;
-    /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
-    /*border-bottom: 0.1em solid White;*/
-    border-right: 0.1em solid white;
-}
-
-#portal-globalnav li a {
   display:block;
-  line-height:1.5em;
-  width: 107px;
-  height: 80px;
-  padding:1px 1em 21px;*/
+  line-height:2em;
+  padding:1px 1em 21px;
   }
 #portal-globalnav li.selected a {
   background-color:#C00016;
   color:#fff;
   }
 #portal-globalnav li a span {
-	padding-top:.5em;
   cursor:pointer; /* fix ie */
   display:block; /* fix ie */
+  line-height: 1.5em;
   white-space: normal;
-  color:#ffffff;
   }
 
 /*----- DropDown -----*/
@@ -252,11 +261,11 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
   height:auto;
   padding:0.5em 1.5em 0.5em 1em;
   vertical-align:top;
-  width:200px;
+  width:12em;
   }
 #portal-globalnav li.selected ul li a {
   background-color:#C00016;
-  color:#205C90;
+  color:#fff;
   }
 #portal-globalnav li ul ul {
   top:0;
@@ -280,31 +289,10 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
   }
 #portal-globalnav:hover li:hover ul > a {
   background-color:#C00016;
-  color:#205C90;
+  color:#fff;
   }
 #portal-globalnav-mobile {
   display:none;
-  }
-}
-
-@media (max-width:767px) {
-#portal-globalnav.mobileMenuOn {
-  display:none;
-  }
-.mobileMenu {
-  background-color: #C00016;
-  margin: 0 0 0.5em;
-  padding:0.5em;
-  }
-#portal-globalnav-mobile {
-  display:block;
-  min-width:150px;
-  }
-}
-
-@media print {
-.mobileMenu {
-  display: none;
   }
 }
 
@@ -417,4 +405,3 @@ div.overlay-iframe, div.overlay-ajax {left:11%!Important; width:75%;}
 }
 	}
 )
-
